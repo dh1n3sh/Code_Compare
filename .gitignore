@@ -1,3 +1,7 @@
+#txt files
+inp.txt
+op1.txt
+op2.txt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

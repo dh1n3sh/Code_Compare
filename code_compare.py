@@ -2,10 +2,10 @@ import random
 import sys, os
 import argparse
 parser = argparse.ArgumentParser(description="Compare two code")
-parser.add_argument('tc_generator', type=str, default='tc_gen.py', help="python code which generates test cases")
-parser.add_argument('code1', type=str, default='code1.py', help="The first python code")
-parser.add_argument('code2', type=str, default='code2.py', help="The second python code")
-parser.add_argument('op_compare', type=str, default='op_compare.py', help="Python code which compares two outputs")
+parser.add_argument('tc_generator', type=str, help="python code which generates test cases")
+parser.add_argument('code1', type=str, help="The first python code")
+parser.add_argument('code2', type=str, help="The second python code")
+parser.add_argument('op_compare', type=str, help="Python code which compares two outputs")
 args = parser.parse_args()
 tc = args.tc_generator
 code1 = args.code1
